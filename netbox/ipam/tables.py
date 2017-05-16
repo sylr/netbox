@@ -247,7 +247,7 @@ class PrefixTable(BaseTable):
 
     class Meta(BaseTable.Meta):
         model = Prefix
-        fields = ('pk', 'prefix', 'status', 'vrf', 'tenant', 'site', 'vlan', 'role', 'description')
+        fields = ('pk', 'prefix', 'description', 'status', 'vrf', 'tenant', 'site', 'vlan', 'role')
         row_attrs = {
             'class': lambda record: 'success' if not record.pk else '',
         }
